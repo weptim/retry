@@ -1,0 +1,323 @@
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body {
+font-size:1em;
+background:#f5f5f5;
+color:#777;
+line-height: 1.6;
+}
+.bleed {
+	grid-column: 1 / -1;
+}
+.wrapper {
+max-width:1400px;
+margin:auto;
+background: #fff;
+}
+.active {
+color:	tomato;
+
+}
+img {
+	width:100%;
+	height: auto;
+}
+#navbar {
+background-color:white;
+border-top:4px solid #f75e2f;
+overflow:hidden;
+box-shadow: 5px 5px 5px lightgrey;
+z-index: 1;
+}
+.logo {
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+	color: #555;
+}
+#navbar h3 {
+float:left;
+font-size:1.5em;
+color:#555;
+}
+#navbar ul {
+float:right;
+}
+#navbar ul li {
+	padding:0em 2em;
+display:inline-block;
+}
+#navbar ul li a {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.89em;
+}
+/*showcase*/
+#showcase .wrapper{
+	overflow: hidden;
+	margin-top:1em;
+ background:#fff;
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-gap: 2em 1em;
+}
+#showcase main .absolute {
+	transform: translate(0px,-50px);
+	background:#33AFFF;
+	padding:2em;
+	opacity:0.9;
+	color: #fff;
+	font-weight: bolder;
+}
+.absolute h3 {
+		font-size:3em;
+}
+.absolute h3:hover {
+	text-decoration: underline;
+}
+.absolute small {
+	text-transform:uppercase;
+}
+aside {
+	margin-right:1em;
+}
+aside article {
+	padding:1.5em;
+	border-bottom:2px solid lightgrey;
+}
+aside article small {
+	font-weight:bolder;
+	text-transform: uppercase;
+}
+#newsletter {
+	padding:1em;
+	background:whitesmoke;
+	margin-top:0.5em;
+}
+#newsletter  small{
+	color: #111;
+}
+#newsletter input[type="email"]{
+	width:100%;
+	border:1px solid lightgrey;
+}
+#newsletter input {
+	padding:0.5em;
+	border:none;
+}
+#newsletter input:focus {
+	outline: none;
+}
+#newsletter input[type="submit"]{
+	width:100%;
+	background: #33AFFF;
+	color: #eee;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+/* article wrapper */
+#articles {
+margin-top: 0;
+}
+#articles .wrapper {
+display: grid;
+padding:1em 2em;
+grid-template-columns: repeat(3, 1fr);
+grid-gap:1em 1em;
+}
+#articles p {
+	padding:1em;
+}
+#articles h3 {
+	padding:0.5em;
+}
+/* analytics */
+#articles #analytics h3{
+background:#DD1F3C;
+color: #eee;
+transition: 1s background;
+}
+#articles #analytics h3:hover {
+	background:linear-gradient(to right, #DD1F3C, yellow);
+}
+#articles #analytics p {
+	background:lavenderblush;
+}
+/*business-strategy*/
+#articles #business-strategy h3{
+background:#6e48aa;
+color: #eee;
+transition: 1s background;
+}
+#articles #business-strategy h3:hover {
+	background:linear-gradient(to right, #6e48aa, yellow);
+}
+#articles #business-strategy p {
+	background:ghostwhite;
+}
+/*content-strategy*/
+#articles #content-strategy h3{
+background:#f44102;
+color: #eee;
+transition: 1s background;
+}
+#articles #content-strategy h3:hover {
+	background:linear-gradient(to right, #f44102, yellow);
+}
+#articles #content-strategy p {
+	background:seashell;
+}
+/*Information-architecture*/
+#articles #Information-architecture h3{
+background:brown;
+color: #eee;
+transition: 1s background;
+}
+#articles #Information-architecture h3:hover {
+	background:linear-gradient(to right, #DD1F3C, yellow);
+}
+#articles #Information-architecture p {
+	background:whitesmoke;
+}
+/*Interaction-design*/
+#articles #Interaction-design h3{
+background:dodgerblue;
+color: #eee;
+transition: 1s background;
+}
+#articles #Interaction-design h3:hover {
+	background:linear-gradient(to right, #DD1F3C, yellow);
+}
+#articles #Interaction-design p {
+	background:aliceblue;
+}
+/*philosophy*/
+#articles #philosophy h3{
+background:olive;
+color: #eee;
+transition: 1s background;
+}
+#articles #philosophy h3:hover {
+	background:linear-gradient(to right, #DD1F3C, yellow);
+}
+#articles #philosophy p {
+	background:#ebebe0;
+}
+/*research*/
+#articles #research h3{
+background:lightseagreen;
+color: #eee;
+transition: 1s background;
+}
+#articles #research h3:hover {
+	background:linear-gradient(to right, #DD1F3C, yellow);
+}
+#articles #research p {
+	background:mintcream;
+}
+/*Universal-design-accessibility*/
+#articles #Universal-design-accessibility h3{
+background:purple;
+color: #eee;
+transition: 1s background;
+}
+#articles #Universal-design-accessibility h3:hover {
+	background:linear-gradient(to right, #DD1F3C, yellow);
+}
+#articles #Universal-design-accessibility p {
+	background:#ebebe0;
+}
+/*visual-design*/
+#articles #visual-design h3{
+background:darkorange;
+color: #eee;
+transition: 1s background;
+}
+#articles #visual-design h3:hover {
+	background:linear-gradient(to right, #DD1F3C, yellow);
+}
+#articles #visual-design p {
+	background:floralwhite;
+}
+/*footer*/
+#main-footer .wrapper {
+	background:snow;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding:2em 1em;
+}
+#main-footer .wrapper div {
+	margin:0.5em 0;
+}
+#main-footer h3{
+color: #000;
+font-size: 0.89em;
+text-transform: uppercase;
+}
+/*media quries*/
+/*
+
+@media screen and (max-width: 500px){
+	body {
+		line-height: 1.2;
+	}
+	#navbar {
+		display: none;
+	}
+	#showcase .wrapper {
+		grid-template-columns: 1fr;
+	}
+	#showcase main img {
+		display: none;
+	}
+	#showcase main {
+		position: relative;
+		background: url('https://images.pexels.com/photos/1043506/pexels-photo-1043506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="my-showcase-image');
+		height: 50vh;
+		background-size: cover;
+		background-position: center;
+		width:100%;
+	}
+	#showcase main .absolute {
+	transform: translate(0px,200px);
+	background:#33AFFF;
+	padding:0.5em;
+	opacity:0.9;
+	color: #fff;
+	font-weight: bolder;
+}
+.absolute h3 {
+		font-size:1em;
+}
+#newsletter input{
+	width:100%;
+}
+#articles .wrapper {
+display:block;
+padding:1rem;
+}
+#articles p {
+	padding:0.5em;
+}
+#articles h3 {
+	padding:0.1em;
+	font-size:0.89em;
+}
+aside {
+	clear: both;
+}
+aside article {
+	padding:1em;
+	border-bottom:2px solid lightgrey;
+}
+#main-footer .wrapper {
+	display: block;
+}
+
+}
+
+*/
